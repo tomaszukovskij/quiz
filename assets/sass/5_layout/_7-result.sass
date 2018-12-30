@@ -1,0 +1,86 @@
+.result-container
+    padding-top: 140px
+
+    .archetype-is
+        width: 100%
+        display: inline-block
+        text-align: center
+
+        span
+            font-weight: 700
+
+        h1
+            font-size: 50px
+            color: $color-secondary
+            letter-spacing: 0
+            text-align: center
+            margin-top: 5px
+    
+    .result-curve
+        margin-top: 70px
+        height: 200px
+        width: 100%
+        position: relative
+        text-align: center
+
+    svg
+        position: absolute
+        left: 43%
+        transform: translate(-50%, 0%)
+    
+
+    .line1, .line2, .line3
+        stroke-dasharray: 3300
+        stroke-dashoffset: 3300
+        animation: dash 2.5s linear forwards
+    
+    
+    .result-explanation
+        display: flex
+        flex-wrap: wrap
+        max-width: 1200px
+        width: 100%
+        margin: 0 auto
+        justify-content: center
+        margin-top: 30px
+
+        .result-box
+            flex-grow: 1
+            width: 33%
+            padding: 0 30px
+            max-width: 600px
+
+            &:nth-child(2)
+                .top
+                    .percentage
+                        color: #FFA596
+
+            &:nth-child(3)
+                .top
+                    .percentage
+                        color: #FFDBD5
+
+            .top
+                .percentage
+                    font-size: 50px
+                    color: $color-secondary
+                    letter-spacing: 0
+                    line-height: 60px
+                    display: block
+                
+                .title
+                    font-size: 24px
+                    color: #000000
+                    letter-spacing: 0
+                    display: block
+                
+            p
+                font-size: 14px
+                color: #000000
+                letter-spacing: 0
+                line-height: 20px
+                margin-top: 25px
+
+@keyframes dash 
+    to
+        stroke-dashoffset: 0

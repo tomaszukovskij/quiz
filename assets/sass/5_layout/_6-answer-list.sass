@@ -1,0 +1,76 @@
+.answers-wrap
+    padding-top: 180px
+    position: relative
+
+.cloned-list
+    position: absolute
+    top: 180px
+    left: 10px
+    width: 100%
+    z-index: -1
+.answer-list
+    display: flex
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative
+    z-index: 15
+    padding: 0
+
+    &.chosen
+        padding-top: 0
+        max-width: 900px
+        height: 150px
+        margin: 0 auto
+        z-index: 101
+        padding: 0
+
+        li
+            flex-basis: calc(33.333% - 40px);  
+            overflow: hidden
+            width: 275px
+            height: 150px
+            border: 2px dashed #FFFFFF
+            display: inline-block
+            margin: 26px 20px
+            position: relative
+
+            &.dropped 
+                .answer-box
+                    background: none
+                    color: #fff
+            
+            span
+                font-weight: 700
+                font-size: 32px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                width: 100px
+                position: absolute
+                left: 20px
+                top: 50%
+                @include transformTop
+
+
+    li
+        display: flex; 
+        flex-basis: calc(50% - 35px)
+        justify-content: center
+        flex-direction: column
+        position: relative
+        z-index: 102
+        margin: 10px 17px
+        max-width: 250px
+
+.answer-box
+    padding: 30px 20px
+    background: #ECECEC 
+    display: inline-block
+    height: 150px
+    max-width: 250px
+    width: 100%
+
+    .cloned-list &
+        background: none
+        font-family: 700px
+        color: #B8B8B8
+        border: 2px dashed #BBBBBB
