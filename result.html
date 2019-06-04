@@ -4,8 +4,8 @@
     <title>Critical</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="styelsheet" href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700" type="text/css">
     <link rel="styelsheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;amp;subset=latin-ext" type="text/css">
   </head>
@@ -13,10 +13,8 @@
     <div id="page-container">
       <header>
         <div class="grid">
-          <div class="row">
-            <div class="col xs-12-12"><a class="logo" href="javascript:void(0)"></a>
-              <div class="made-by-vsbl"><a href="javascript:void(0)">Made by</a></div>
-            </div>
+          <div class="row"><a class="logo" href="javascript:void(0)"></a>
+            <div class="made-by-vsbl"><a href="http://vsbl.lt" target="_blank">Powered by</a></div>
           </div>
         </div>
       </header>
@@ -24,19 +22,10 @@
         <div class="archetype-is"><span>Your brand archetype is</span>
           <h1>Caregiver</h1>
         </div>
-        <div class="result-curve">
-             <svg width="2415px" height="152px" viewBox="0 0 2415 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-<g id="Artboard" transform="translate(-10.000000, -776.000000)" stroke-width="10">
-<g id="Graph" transform="translate(10.000000, 781.000000)">
-<path class="line1" d="M0,142 L1246.01518,142 C1293.75744,142 1339.92484,124.921568 1376.17346,93.8513205 L1390,82 C1430.28062,47.4737529 1489.71938,47.4737529 1530,82 L1543.82654,93.8513205 C1580.07516,124.921568 1626.24256,142 1673.98482,142 L2720,142" id="Path-3" stroke="#FFDBD5"></path>
-<path class="line2" d="M-4.54747351e-13,142 L1076.01518,142 C1123.75744,142 1169.92484,124.921568 1206.17346,93.8513205 L1220,82 C1260.28062,47.4737529 1319.71938,47.4737529 1360,82 L1373.82654,93.8513205 C1410.07516,124.921568 1456.24256,142 1503.98482,142 L2709.28006,142" id="Path-3" stroke="#FFA596"></path>
-<path class="line3" d="M0,142 L817.157288,142 C870.200585,142 921.071368,120.928632 958.578644,83.4213562 L1000,42 C1055.22847,-13.228475 1144.77153,-13.228475 1200,42 L1241.42136,83.4213562 C1278.92863,120.928632 1329.79941,142 1382.84271,142 L2720,142" id="Path-3" stroke="#FF4B2D"></path>
-</g>
-</g>
-</g>
-</svg>
+        <div class="canvas-height">
+          <canvas id="canvas" height="200" width="800"></canvas>
         </div>
+        <button id="hello">Hello</button>
         <div class="result-explanation">
           <div class="result-box">
             <div class="top"><span class="percentage">50%</span><span class="title">Caregiver</span></div>
@@ -52,11 +41,19 @@
           </div>
         </div>
       </div>
-      <footer></footer>
+      <footer>
+        <div class="white-overlay"></div>
+      </footer>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      <script type="text/javascript" src="../assets/js/min/script.js"></script>
-      <script type="text/javascript" src="../assets/js/vendors/slick.min.js"></script>
+      <script type="text/javascript" src="assets/js/vendors/slick.min.js"></script>
+      <script type="text/javascript" src="assets/js/vendors/jquery.jInvertScroll.js"></script>
+      <script type="text/javascript" src="assets/js/vendors/jspdf.min.js"></script>
+      <script type="text/javascript" src="assets/js/vendors/jquery.ui.touch-punch.min.js"></script>
+      <script type="text/javascript" src="assets/js/vendors/Chart.bundle.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+      <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+      <script type="text/javascript" src="assets/js/script.js"></script>
     </div>
   </body>
 </html>

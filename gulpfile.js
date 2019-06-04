@@ -40,7 +40,7 @@ gulp.task('pug',function() {
 	   doctype: 'html',
 	   pretty: true
 	}))
-	.pipe(gulp.dest('./pug-compiled'));
+	.pipe(gulp.dest(''));
 });
 
 gulp.task('compressJS', function () {
@@ -51,9 +51,10 @@ gulp.task('compressJS', function () {
 
 gulp.task('pug-watch', ['pug']);
 
-gulp.task('default', ['sass', 'pug'], function () {
+gulp.task('default', ['sass'], function () {
 	gulp.watch( config.scssPath + '**/*.sass' , ['sass']);
-	gulp.watch('pug/**/*.pug', ['pug']);
+	// gulp.watch( config.jsPath + '**/*.js' , ['compressJS']);
+	// gulp.watch('pug/**/*.pug', ['pug']);
 	livereload.listen();
 });
 

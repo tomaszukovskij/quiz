@@ -42,10 +42,10 @@ $grid-row-name: "row" !default
 $grid-column-name: "col" !default
 
 //   2 - grid width
-$grid-max-width: 1200px !default
+$grid-max-width: inherit !default
 
 //   3 - grid side margins
-$grid-side-margin: 20px !default
+$grid-side-margin: 0px !default
 
 //   4 - col groups
 $grid-col-groups: (12) !default
@@ -62,8 +62,8 @@ $grid-col-xs-breakpoint-sizes: xs !default
 $grid-col-gutter: 20px !default
 
 //   7 - grid breakpoints
-$grid-breakpoint-xl: 1200px
-$grid-breakpoint-lg: 1200px
+$grid-breakpoint-xl: 1050px
+$grid-breakpoint-lg: 1050px
 $grid-breakpoint-md: 1024px
 $grid-breakpoint-sm: 768px
 $grid-breakpoint-xs: 568px
@@ -84,11 +84,10 @@ $grid-testing-classes: false !default
 
 // Grids
 .#{$grid-container-name}
-  margin-left: auto
-  margin-right: auto
+  margin-left: 7vw
+  margin-right: 7vw
   padding-left: $grid-side-margin
   padding-right: $grid-side-margin
-  max-width: $grid-max-width
   &:before, &:after
     content: ''
     display: table

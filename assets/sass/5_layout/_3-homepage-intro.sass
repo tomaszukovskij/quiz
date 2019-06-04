@@ -1,39 +1,51 @@
 .homepage-intro
     position: absolute
-    max-width: 1200px
+    max-width: 1050px
     width: 100%
     top: 50%
-    left: 50%
-    @include transformCenter
+    transform: translate(0, -50%)
 
     .text-headline
-        max-width: 750px
+        max-width: 710px
         width: 100%
         h1
-            font-size: 80px;
-            letter-spacing: 0;
+            font-size: 80px
+            letter-spacing: 0
             margin: 0
-        
+
         p
-            font-size: 24px;
-            color: #000000;
-            line-height: 32px;
-    
+            font-size: 24px
+            color: #000000
+            line-height: 32px
+            margin-top: 20px
+
     .controls
-        margin-top: 30px
+        margin-top: 60px
         display: inline-block
-        .btn 
+
+        @media all and (max-width: 568px)
+          margin-top: 30px
+
+        .btn
             width: 180px
             height: 60px
             line-height: 60px
-        
+            vertical-align: middle
+
         .helper-text
             display: inline-block
             vertical-align: middle
             margin-left: 20px
+            color: $color-secondary
+
+            @media all and (max-width: 370px)
+              margin-top: 20px
 
 .lightning-homepage
-    position: absolute
+    position: fixed
     right: 0
-    bottom: 24%
+    bottom: 16%
     width: 311px
+
+    @media all and (max-width: 370px)
+      display: none

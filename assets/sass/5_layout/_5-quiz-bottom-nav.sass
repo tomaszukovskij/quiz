@@ -5,20 +5,42 @@
     background: $color-secondary
     bottom: 0
     z-index: 10
+    min-width: 1024px
+
+    @media all and (max-height: 750px)
+      height: 170px
+
+    .drop-area-wrap
+      height: 100%
+      position: relative
 
     .quiz-btn
         height: 100%
         width: 180px
         text-align: center
-        font-size: 24px;
+        font-size: 24px
         color: $color-tertiary
-        line-height: 32px;
+        line-height: 32px
         position: absolute
         top: 0
+        transition: background .2s ease-in-out
+        will-change: background
+        cursor: pointer
 
-        &.back 
+        @media all and (max-width: 1280px)
+          width: 130px
+
+        &:hover
+            background: $color-primary
+
+        &.back
             left: 0
 
         &.next
             right: 0
-            background: $color-primary
+
+        &.result-btn
+            right: 0
+
+        &.pen
+          pointer-events: none

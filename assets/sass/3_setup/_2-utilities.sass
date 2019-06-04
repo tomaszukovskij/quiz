@@ -1,16 +1,21 @@
 ul
   list-style-type: none
   margin: 0
+
 // element floats and positioning
 .fl-left
   float: left
+
 .fl-right
   float: right !important
+
 .fl-center
   margin-left: auto
   margin-right: auto
+
 .fl-none
   float: none
+
 .va-center
   position: relative
   top: 50%
@@ -19,32 +24,45 @@ ul
 // element text align
 .ta-left
   text-align: left
+
 .ta-center
   text-align: center
+
 .ta-right
   text-align: right
 
 // float clear classes
 .clear
   clear: both
+
 .clearfix
   &:before, &:after
-    content: ''
+    content: ""
     display: table
+
   &:after
     clear: both
 
 // Page container
-#page-container
-  overflow: hidden
-  position: relative
+.no-touch
+  #page-container
+    overflow: hidden
+    position: relative
 
+    &.home
+      height: 100vh
+
+      .grid
+        height: 100vh
+        position: relative
 // Image box
 .img-box
   overflow: hidden
+
   img
     display: block
     max-width: 100%
+
   &.img-box--full
     img
       width: 100%
@@ -52,9 +70,11 @@ ul
 // Text box
 .text-box
   overflow: hidden
-  >*
+
+  > *
     &:first-child
       margin-top: 0
+
     &:last-child
       margin-bottom: 0
 
@@ -63,5 +83,24 @@ button
   outline: none
   background: inherit
 
+.no-touch
+  body
+    height: 100vh
+    overflow-x: hidden
+    user-select: none
+    min-width: 1050px
+    overscroll-behavior: none
+
 body
-  height: 100vh
+  min-width: 1024px
+
+  &.ovh
+    height: 100vh !important
+
+  &.fullHeight
+    height: 100% !important
+    padding-bottom: 160px
+
+.touch
+  body.ovh
+    height: auto !important

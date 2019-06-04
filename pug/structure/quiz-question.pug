@@ -1,92 +1,394 @@
-.quiz-slider
-    .quiz-question-wrap#1
-        .grid
-            .row
-                .col.md-6-12.full-height
-                    .quiz-question
-                        h2 What is the goal of your brand?
-                        span.quiz-question--explanation Please <p>drag and drop</p> 3 cards that you think best describe your brand by <p>priority<p>.
-                
-                .col.md-6-12.answers-wrap
-                    ul#allFacets.answer-list
-                        li.draggable
-                            .answer-box(data-value="Lover Intimacy") Enjoy life passionately and promote relationship. Be a ectionate, intimate and charming.
-                        li.draggable
-                            .answer-box(data-value="Caregiver Service") Help and serve others. Be service-oriented, empathetic and giving.
-                        li.draggable
-                            .answer-box(data-value="Innocent Safety") Return to simple pleasures, to find and create hapiness. Be wholesome, utopian and optimistic.
-                        li.draggable
-                            .answer-box(data-value="Rebel Liberation") Resist the status quo and escape average. Be risktaking, raw and edgy.
-                        li.draggable
-                            .answer-box(data-value="Entertainer Enjoyment") Enjoy the moment and lighten up the world. Be playful, humorous and witty.
-                        li.draggable
-                            .answer-box(data-value="Ruler Control") Achieve success and influence. Be confident, powerful and authoritative.
-                        li.draggable
-                            .answer-box(data-value="Sage Understanding") Understand the world, to find and share the truth. Be truth-seeking, decisive and objective.
-                        li.draggable
-                            .answer-box(data-value="Magician Belief") Transform people’s lives and promote faith and wonder. Be transformative inspiring, visionary.
-                        li.draggable
-                            .answer-box(data-value="Everyman Belonging") Build community, relate to others, belong and be accepted. Be friendly, down-to-earth and honest.
-                        li.draggable
-                            .answer-box(data-value="Creator Innovation") Create something new and realise a vision. Be imaginative, innovative and expressive.
-                        li.draggable
-                            .answer-box(data-value="Explorer Freedom") Learn about life through experience and create more freedom. Be openminded, adventurous and independent.
-                        li.draggable
-                            .answer-box(data-value="Hero Mastery") Over-come all abstacles and motivate others to be better. Be courageous, determined and triumphant.
-                    
-                    div.cloned-list
-                
-    
-    .quiz-question-wrap#2
-        .grid
-            .row
-                .col.md-6-12.full-height
-                    .quiz-question
-                        h2 What are characteristics of your brand?
-                        span.quiz-question--explanation Please <p>drag and drop</p> 3 cards that you think best describe your brand by <p>priority<p>.
-                
-                .col.md-6-12.answers-wrap
-                    ul#allFacets.answer-list
-                        li.draggable
-                            .answer-box(data-value="Lover Intimacy") Passionate Loving people
-                        li.draggable
-                            .answer-box(data-value="Caregiver Service") Caring Helpful Patronizing Advising
-                        li.draggable
-                            .answer-box(data-value="Innocent Safety") Loyal Dreamy Hopeful Optimistic
-                        li.draggable
-                            .answer-box(data-value="Rebel Liberation") Initiating radical changes Able to shake
-                        li.draggable
-                            .answer-box(data-value="Entertainer Enjoyment") Joyful Positive Enjoyful Free
-                        li.draggable
-                            .answer-box(data-value="Ruler Control") Responsible Controlling Commanding
-                        li.draggable
-                            .answer-box(data-value="Sage Understanding") Wise Competent Expert Objective
-                        li.draggable
-                            .answer-box(data-value="Magician Belief") Charismatic Mystical Magical
-                        li.draggable
-                            .answer-box(data-value="Everyman Belonging") Realistic Fit for everyone Versatile Ordinary
-                        li.draggable
-                            .answer-box(data-value="Creator Innovation") Innovating Creating Visionary
-                        li.draggable
-                            .answer-box(data-value="Explorer Freedom") Independent Unconstrained Exploring Curious
-                        li.draggable
-                            .answer-box(data-value="Hero Mastery") Brave Persistent Goal oriented
-        
-.drop-answers-area
-    button.quiz-btn.back Back
-    ul#a-1.answer-list.chosen
-        li.dropppable(data-id="1")
-            span Most accurate
-        li.dropppable(data-id="2")
-            span In the middle
-        li.dropppable(data-id="3")
-            span Least accurate
-    ul#a-2.answer-list.chosen
-        li.dropppable(data-id="1")
-            span Most accurate
-        li.dropppable(data-id="2")
-            span In the middle
-        li.dropppable(data-id="3")
-            span Least accurate
+.quiz-questions-block
+    .quiz-slider
+        .quiz-questions-wrap-block
+            .quiz-question-wrap#1
+                .grid
+                    .row
+                        .column-split
+                            .quiz-question
+                                h2 What is the goal of your brand?
+                                span.quiz-question--explanation Read all 12 cards. <span>  Drag and drop</span> 3 most relevant of them..
+                        
+                        .wrap-wrap  
+                            .answers-wrap.scroll(style={left: ' 0'})
+                                .mouse
+                                  .wheel
+                                ul#allFacets.answer-list
+                                    li.draggable
+                                        .answer-box(data-value="Lover Intimacy") Enjoy life passionately and promote relationship. Be a ectionate, intimate and charming.
+                                    li.draggable
+                                        .answer-box(data-value="Caregiver Service") Help and serve others. Be service-oriented, empathetic and giving.
+                                    li.draggable
+                                        .answer-box(data-value="Innocent Safety") Return to simple pleasures, to find and create hapiness. Be wholesome, utopian and optimistic.
+                                    li.draggable
+                                        .answer-box(data-value="Rebel Liberation") Resist the status quo and escape average. Be risktaking, raw and edgy.
+                                    li.draggable
+                                        .answer-box(data-value="Entertainer Enjoyment") Enjoy the moment and lighten up the world. Be playful, humorous and witty.
+                                    li.draggable
+                                        .answer-box(data-value="Ruler Control") Achieve success and influence. Be confident, powerful and authoritative.
+                                    li.draggable
+                                        .answer-box(data-value="Sage Understanding") Understand the world, to find and share the truth. Be truth-seeking, decisive and objective.
+                                    li.draggable
+                                        .answer-box(data-value="Magician Belief") Transform people’s lives and promote faith and wonder. Be transformative inspiring, visionary.
+                                    li.draggable
+                                        .answer-box(data-value="Everyman Belonging") Build community, relate to others, belong and be accepted. Be friendly, down-to-earth and honest.
+                                    li.draggable
+                                        .answer-box(data-value="Creator Innovation") Create something new and realise a vision. Be imaginative, innovative and expressive.
+                                    li.draggable
+                                        .answer-box(data-value="Explorer Freedom") Learn about life through experience and create more freedom. Be openminded, adventurous and independent.
+                                    li.draggable
+                                        .answer-box(data-value="Hero Mastery") Over-come all abstacles and motivate others to be better. Be courageous, determined and triumphant.
+                                
+                                div.cloned-list
+                        
+            
+            .quiz-question-wrap#2
+                .grid
+                    .row
+                        .column-split
+                            .quiz-question
+                                h2 What are characteristics of your brand?
+                                span.quiz-question--explanation Read all 12 cards. <span>  Drag and drop</span> 3 most relevant of them..                        
+                        .wrap-wrap
+                            .answers-wrap.scroll
+                                ul#allFacets.answer-list
+                                  li.draggable
+                                      .answer-box(data-value="Lover Intimacy") Passionate; Loving; people
+                                  li.draggable
+                                      .answer-box(data-value="Caregiver Service") Caring; Helpful; Patronizing; Advising
+                                  li.draggable
+                                      .answer-box(data-value="Innocent Safety") Loyal; Dreamy; Hopeful; Optimistic
+                                  li.draggable
+                                      .answer-box(data-value="Rebel Liberation") Initiating radical changes; Able to shake
+                                  li.draggable
+                                      .answer-box(data-value="Entertainer Enjoyment") Joyful; Positive; Enjoyful; Free
+                                  li.draggable
+                                      .answer-box(data-value="Ruler Control") Responsible; Controlling; Commanding
+                                  li.draggable
+                                      .answer-box(data-value="Sage Understanding") Wise; Competent; Expert; Objective
+                                  li.draggable
+                                      .answer-box(data-value="Magician Belief") Charismatic; Mystical; Magical
+                                  li.draggable
+                                      .answer-box(data-value="Everyman Belonging") Realistic; Fit for everyone; Versatile; Ordinary
+                                  li.draggable
+                                      .answer-box(data-value="Creator Innovation") Innovating; Creating; Visionary
+                                  li.draggable
+                                      .answer-box(data-value="Explorer Freedom") Independent; Unconstrained; Exploring; Curious
+                                  li.draggable
+                                      .answer-box(data-value="Hero Mastery") Brave; Persistent; Goal oriented
+                                
+                                div.cloned-list
+                                
+            .quiz-question-wrap#3
+                .grid
+                    .row
+                        .column-split
+                            .quiz-question
+                                h2 What is the strategy of your brand?
+                                span.quiz-question--explanation Read all 12 cards. <span>  Drag and drop</span> 3 most relevant of them..
+                        
+                        .wrap-wrap
+                            .answers-wrap.scroll
+                                ul#allFacets.answer-list
+                                    li.draggable
+                                        .answer-box(data-value="Lover Intimacy") To become more and more physically and emotionally attractive
+                                    li.draggable
+                                        .answer-box(data-value="Caregiver Service") Doing things for others
+                                    li.draggable
+                                        .answer-box(data-value="Innocent Safety") To do things right
+                                    li.draggable
+                                        .answer-box(data-value="Rebel Liberation") Disrupt, destroy, or shock
+                                    li.draggable
+                                        .answer-box(data-value="Entertainer Enjoyment") Play, make jokes, be funny
+                                    li.draggable
+                                        .answer-box(data-value="Ruler Control") Exercise power
+                                    li.draggable
+                                        .answer-box(data-value="Sage Understanding") Seeking out information and knowledge; self-reflection and understanding thought processes
+                                    li.draggable
+                                        .answer-box(data-value="Magician Belief") Develop a vision and live by it
+                                    li.draggable
+                                        .answer-box(data-value="Everyman Belonging") Develop ordinary solid virtues, be down to earth, the common touch
+                                    li.draggable
+                                        .answer-box(data-value="Creator Innovation") Develop creative control and skill
+                                    li.draggable
+                                        .answer-box(data-value="Explorer Freedom") Journey, seeking out and experiencing new things, escape from boredom
+                                    li.draggable
+                                        .answer-box(data-value="Hero Mastery") To be as strong and competent as possible
+                                
+                                div.cloned-list
+                                    
+            .quiz-question-wrap#4
+                .grid
+                    .row
+                        .column-split
+                            .quiz-question
+                                h2 Which of these brands do you find most parallel with your brand? 
+                                span.quiz-question--explanation Look at all 12 cards. <span>  Drag and drop</span> 3 most relevant of them.
+                        
+                        .wrap-wrap
+                            .answers-wrap.scroll
+                                ul#allFacets.answer-list.logo
+                                    li.draggable
+                                        .answer-box(data-value="Lover Intimacy")
+                                          img(src="assets/img/logos/victoria-secret.png").victoria
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Caregiver Service")
+                                          img(src="assets/img/logos/johnsons-volvo.png").johnsons-volvo
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Innocent Safety")
+                                          img(src="assets/img/logos/dove-barbie.png").dove-barbie
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Rebel Liberation")
+                                          img(src="assets/img/logos/mtv-harley.png").mtv-harley
+                                          h2.credits credits:
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Entertainer Enjoyment")
+                                          img(src="assets/img/logos/fanta-skittles.png").fanta-skittles
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Ruler Control")
+                                          img(src="assets/img/logos/rolex-benz.png").rolex-benz
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Sage Understanding")
+                                          img(src="assets/img/logos/cnn-google.png").cnn-google
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Magician Belief")
+                                          img(src="assets/img/logos/ted-disney.png").ted-disney
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Everyman Belonging")
+                                          img(src="assets/img/logos/ikea-ebay.png").ikea-ebay
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Creator Innovation")
+                                          img(src="assets/img/logos/lego-apple.png").lego-apple
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Explorer Freedom")
+                                          img(src="assets/img/logos/redbull-gopro.png").redbull-gopro
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                    li.draggable
+                                        .answer-box(data-value="Hero Mastery")
+                                          img(src="assets/img/logos/nike-duracell.png").nike-duracell
+                                          h2.credits credits: 
+                                            a(href="google.com", target="_blank") Author
+                                
+                                div.cloned-list.brands 
+                                    
+            .quiz-question-wrap#5
+                .grid
+                    .row
+                        .column-split
+                            .quiz-question
+                                h2 With what person or character would you align your brand?
+                                span.quiz-question--explanation Look at all 12 cards. <span>  Drag and drop</span> 3 most relevant of them.
+                        
+                        .wrap-wrap
+                            .answers-wrap.scroll
+                                ul#allFacets.answer-list.brands-m
+                                    li.draggable
+                                        .answer-box.image.marilyn(data-value="Lover Intimacy") Marilyn Monroe
+                                          h2.credits credits: 
+                                            a(href="https://commons.wikimedia.org/wiki/File:Marilyn_Monroe_photo_pose_Seven_Year_Itch.jpg", target="_blank") Published 
+                                            by Corpus Christi Caller
+                                    li.draggable
+                                        .answer-box.image.mother-theresa(data-value="Caregiver Service") Mother Teresa
+                                          h2.credits credits: 
+                                            a(href="https://www.flickr.com/photos/146857093@N05/28535580788", target="_blank") Photo 
+                                            by Philip K
+                                    li.draggable
+                                        .answer-box.image.cinderella(data-value="Innocent Safety") Cinderella
 
-    button.quiz-btn.next Next
+                                    li.draggable
+                                        .answer-box.image.idol(data-value="Rebel Liberation") Billy Idol
+                                          h2.credits credits: 
+                                            a(href="https://commons.wikimedia.org/wiki/File:Billy-idol-cradle-of-love-tour.jpg", target="_blank") Photo 
+                                            by Carlos Aguilar / 
+                                            a(href="https://creativecommons.org/licenses/by-sa/3.0", target="_blank") CC BY-SA 3.0
+                                    li.draggable
+                                        .answer-box.image.jim(data-value="Entertainer Enjoyment") Jim Carrey
+                                          h2.credits credits: 
+                                            a(href="https://www.flickr.com/photos/caotiquemind/3106983761", target="_blank") Photo 
+                                            by Noemi Nuñez / 
+                                            a(href="https://creativecommons.org/licenses/by-sa/2.0/", target="_blank") CC BY-SA 2.0
+                                    li.draggable
+                                        .answer-box.image.lincoln(data-value="Ruler Control") Abraham Lincoln
+                                          h2.credits credits: 
+                                            a(href="https://en.wikipedia.org/wiki/File:Abraham_Lincoln_O-116_by_Gardner,_1865.png", target="_blank") Photo 
+                                            by Alexander Gardner
+                                    li.draggable
+                                        .answer-box.image.gates(data-value="Sage Understanding") Bill Gates
+                                          h2.credits credits: 
+                                            a(href="https://www.flickr.com/photos/155754835@N04/35914109702", target="_blank") Photo 
+                                            by Sebastian Vital / 
+                                            a(href="https://creativecommons.org/licenses/by/2.0/", target="_blank") CC BY 2.0
+                                    li.draggable
+                                        .answer-box.image.spielberg(data-value="Magician Belief") Steven Spielberg
+                                          h2.credits credits: 
+                                            a(href="https://www.flickr.com/photos/gageskidmore/36057844341", target="_blank") Photo 
+                                            by Sebastian Vital / 
+                                            a(href="https://creativecommons.org/licenses/by/2.0/", target="_blank") CC BY-SA 2.0
+                                    li.draggable
+                                        .answer-box.image.anne(data-value="Everyman Belonging") Anne Hathaway
+                                          h2.credits credits: 
+                                            a(href="https://commons.wikimedia.org/wiki/File:Anne_Hathaway_at_the_2007_Deauville_American_Film_Festival-01.jpg", target="_blank") Photo 
+                                            by Mireille Ampilhac / 
+                                            a(href="https://creativecommons.org/licenses/by/2.0/", target="_blank") CC BY-SA 2.0
+                                    li.draggable
+                                        .answer-box.image.jobs(data-value="Creator Innovation") Steve Jobs
+                                          h2.credits credits: 
+                                            a(href="https://commons.wikimedia.org/wiki/File:Steve_Jobs_WWDC07.jpg", target="_blank") Photo 
+                                            by Acaben / 
+                                            a(href="https://creativecommons.org/licenses/by/2.0/", target="_blank") CC BY-SA 2.0
+                                    li.draggable
+                                        .answer-box.image.irwin(data-value="Explorer Freedom") Steve Irwin
+                                          h2.credits credits: 
+                                            a(href="https://commons.wikimedia.org/wiki/File:Steve_Irwin.jpg", target="_blank") Photo 
+                                            by Richard Giles / 
+                                            a(href="https://creativecommons.org/licenses/by/2.0/", target="_blank") CC BY 2.0
+                                    li.draggable
+                                        .answer-box.image.batman(data-value="Hero Mastery") Batman
+                                          h2.credits credits: 
+                                            a(href="https://commons.wikimedia.org/wiki/File:Batman_(black_background).jpg", target="_blank") Photo 
+                                              by Andrew Guyton / 
+                                              a(href="https://creativecommons.org/licenses/by/2.0/", target="_blank") CC BY-SA 2.0
+                                
+                                div.cloned-list.people
+            
+    .drop-answers-area
+        .drop-area-wrap#a-1
+          button.quiz-btn.back.pen Back
+          ul.answer-list.chosen
+            li.dropppable(data-id="1")(data-percent="70")
+                span Most accurate
+            li.dropppable(data-id="2")(data-percent="20")
+                span Less accurate
+            li.dropppable(data-id="3")(data-percent="10")
+                span Least accurate
+          button.quiz-btn.next.pen Next
+          
+        .drop-area-wrap#a-2
+          button.quiz-btn.back Back
+          ul.answer-list.chosen
+            li.dropppable(data-id="1")(data-percent="70")
+                span Most accurate
+            li.dropppable(data-id="2")(data-percent="20")
+                span Less accurate
+            li.dropppable(data-id="3")(data-percent="10")
+                span Least accurate
+          button.quiz-btn.next.pen Next
+          
+        .drop-area-wrap#a-3
+          button.quiz-btn.back Back
+          ul.answer-list.chosen
+            li.dropppable(data-id="1")(data-percent="70")
+                span Most accurate
+            li.dropppable(data-id="2")(data-percent="20")
+                span Less accurate
+            li.dropppable(data-id="3")(data-percent="10")
+                span Least accurate
+          button.quiz-btn.next.pen Next
+          
+        .drop-area-wrap#a-4
+          button.quiz-btn.back Back
+          ul.answer-list.chosen
+            li.dropppable(data-id="1")(data-percent="70")
+                span Most accurate
+            li.dropppable(data-id="2")(data-percent="20")
+                span Less accurate
+            li.dropppable(data-id="3")(data-percent="10")
+                span Least accurate
+          button.quiz-btn.next.pen Next
+          
+        .drop-area-wrap#a-5
+          button.quiz-btn.back Back
+          ul.answer-list.chosen
+            li.dropppable(data-id="1")(data-percent="70")
+                span Most accurate
+            li.dropppable(data-id="2")(data-percent="20")
+                span Less accurate
+            li.dropppable(data-id="3")(data-percent="10")
+                span Least accurate
+          button.quiz-btn.result-btn.pen Result
+    
+
+.remove-card
+  span <p>Drop</p> the card here to <p>remove it</p>
+        
+.result-container.canvas_div_pdf
+    .archetype-is
+        span Your brand archetype is
+        span.h1
+    
+    .result-curve      
+        .canvas-height
+          canvas#canvas(height="200", width="800")
+    
+    .result-explanation
+        .result-box#result1
+            .top
+                span.percentage 50%
+                span.title
+            
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lorem erat, varius non tempus id, ullamcorper vel quam. Cras at ornare erat, non condimentum elit. Vestibulum sed elit fringilla magna venenatis ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+        
+        .result-box#result2
+            .top
+                span.percentage 25%
+                span.title
+            
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lorem erat, varius non tempus id, ullamcorper vel quam. Cras at ornare erat, non condimentum elit. Vestibulum sed elit fringilla magna venenatis ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+        
+        .result-box#result3
+            .top
+                span.percentage 25%
+                span.title
+            
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lorem erat, varius non tempus id, ullamcorper vel quam. Cras at ornare erat, non condimentum elit. Vestibulum sed elit fringilla magna venenatis ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+    
+    .result-bottom-panel.desktop(data-html2canvas-ignore)
+        a.result-btn.restart Do the quiz again?
+        a(href='javascript:void(0)').contacts-btn Start your brand’s journey to success
+        button.result-btn.save-pdf(onclick="javascript:getPDF()") Save result as PDF
+    
+    .result-bottom-panel.mobile(data-html2canvas-ignore)
+        a.result-btn.restart Do the quiz again?
+        button.result-btn.save-pdf(onclick="javascript:getPDF()") Save result as PDF
+        a(href='javascript:void(0)').contacts-btn Start your brand’s journey to success
+    
+    .contact-us(data-html2canvas-ignore)
+      .contact-us-box
+        span Brand archetype is only the beginning of your brand journey through customer experience. Let’s build it together.
+        .mail 
+          a(href='mailto:hi@wearecritical.com') hi@wearecritical.com
+        .checkout And check our portfolio at <a href="http://www.wearecritical.com" target="_blank"> www.wearecritical.com</a>
+        .checkout This site was coded by <a href="http://www.vsbl.lt" target="_blank"> www.vsbl.lt</a>
+      a(href='javascript:void(0)').close Close
+    
+    .contact-us-box#only-pdf
+      span Brand archetype is only the beginning of your brand journey through customer experience. Let’s build it together.
+      .mail 
+        a(href='mailto:hi@wearecritical.com') hi@wearecritical.com
+      .checkout And check our portfolio at <a href="http://www.wearecritical.com" target="_blank"> www.wearecritical.com</a>
+      .checkout This site was coded by <a href="http://www.vsbl.lt" target="_blank"> www.vsbl.lt</a>
+
+.resize-me
+  .text
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="expand" class="svg-inline--fa fa-expand fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path></svg>
+    span Please resize your browser <br/> for better experience
